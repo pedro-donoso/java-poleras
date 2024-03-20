@@ -32,6 +32,7 @@ public class PoleraClase {
     System.out.println("Precio: " + precio);
   }
   
+  // AGREGO MÉTODO mostrarPoleras
   public void mostrarPoleras() {
     if(todasPoleras.isEmpty()) {
       System.out.println("No hay poleras");
@@ -41,9 +42,5 @@ public class PoleraClase {
       Polera.mostrarDatos();
     }
   }
-
-
-
-
 
 }
