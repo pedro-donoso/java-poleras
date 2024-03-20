@@ -21,10 +21,9 @@ public class PoleraClase {
 
   // AGREGO MÉTODO
   public void mostrarPolera() {
-    for (PoleraClase poleraObjeto : todasPoleras) {
-      System.out.println(
-          "Talla: " + poleraObjeto.talla + " Marca: " + poleraObjeto.marca + " Precio: " + poleraObjeto.precio);
-    }
+    System.out.println("Talla: " + talla);
+    System.out.println("Marca: " + marca);
+    System.out.println("Precio: " + precio);
   }
 
 }
