@@ -19,11 +19,31 @@ public class PoleraClase {
     this.precio = precio;
   }
 
-  // AGREGO MÉTODO
-  public void mostrarPolera() {
+  // AGREGO MÉTODO agregarPolera
+  public void agregarPolera(String talla, String marca, int precio) {
+    PoleraClase Polera = new PoleraClase(talla, marca, precio);
+    todasPoleras.add(Polera); 
+  }
+
+  // AGREGO MÉTODO mostrarDatos
+  public void mostrarDatos() {
     System.out.println("Talla: " + talla);
     System.out.println("Marca: " + marca);
     System.out.println("Precio: " + precio);
   }
+  
+  public void mostrarPoleras() {
+    if(todasPoleras.isEmpty()) {
+      System.out.println("No hay poleras");
+      return;
+    }
+    for (PoleraClase Polera : todasPoleras) {
+      Polera.mostrarDatos();
+    }
+  }
+
+
+
+
 
 }
